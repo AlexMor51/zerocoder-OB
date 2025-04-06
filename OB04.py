@@ -20,11 +20,11 @@ class Bow(Weapon):
         monster.change_life(5)
 
 class Fighter():
-    def __init__(self,name,weapon):
+    def __init__(self,name,weapon:Weapon):
         self.name = name
         self.weapon = weapon
 
-    def change_weapon(self,weapon):
+    def change_weapon(self,weapon:Weapon):
         self.weapon = weapon
         print(f"{self.name} выбирает {self.weapon.type_weapon} ")
 
